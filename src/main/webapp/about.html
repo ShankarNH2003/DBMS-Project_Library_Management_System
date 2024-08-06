@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Restaurant Management System</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Default font */
+            background: rgb(229,205,138);
+            background: radial-gradient(circle, rgba(229,205,138,1) 0%, rgba(223,220,211,1) 0%, rgba(232,200,128,1) 0%, rgba(239,222,180,1) 100%, rgba(255,249,249,1) 100%);
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: rgba(0,0,100,0.08); /* White background for content area */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        .about-content img {
+            float: left; /* Float image to the left */
+            margin-right: 20px; /* Space between image and content */
+            border-radius: 8px;
+            max-width: 40%; /* Adjust width as needed */
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        .about-content h3 {
+            font-family: 'Georgia', serif; /* Cursive-like serif font */
+            font-size: 2em;
+            margin-top: 20px;
+            color: #555;
+        }
+        .about-content p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+        .about-content h4 {
+            font-family: 'Georgia', serif; /* Cursive-like serif font */
+            font-size: 1.5em;
+            color: #444;
+            margin-top: 20px;
+        }
+        .about-content ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #666;
+            text-align: left;
+            display: inline-block;
+        }
+        .about-content ul li {
+            margin-bottom: 10px;
+            padding-left: 1em;
+            position: relative;
+        }
+        .about-content ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #00a859; /* Checkmark color */
+        }
+        .team-container {
+            padding: 60px 0;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.3); /* Glassmorphism background */
+            backdrop-filter: blur(10px); /* Glassmorphism effect */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .team-member h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-family: 'Georgia', serif; /* Cursive-like serif font */
+            color: #333;
+        }
+        .team-member h4 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-family: 'Georgia', serif; /* Cursive-like serif font */
+            color: #333;
+        }
+        .team-member p {
+            font-size: 1em;
+            color: #666;
+        }
+        .contact-info {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .footer {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* White text color */
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #f8f9fa; /* Light text color for links */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Include your navbar code here -->
+    </nav>
+    
+    <div class="about-content">
+        <img src="{% static 'D:/Final_Resto/static/assets/resto.jpeg' %}" alt="Restaurant Interior">
+        <h3>Welcome to MY Elite <small>MY resto..</small></h3>
+        <p>At MY Elite <small>MY resto..</small>, we believe in offering exceptional dining experiences with a blend of delicious cuisine and outstanding service. Established in 2023, our restaurant has been serving the community with a passion for creating memorable meals in a warm and inviting atmosphere.</p>
+        
+        <h4>Our Mission</h4>
+        <p>Our mission is to provide our guests with an unforgettable dining experience through a combination of high-quality ingredients, innovative culinary techniques, and attentive service. We are committed to excellence and strive to exceed our guests' expectations with every visit.</p>
+        
+        <h4>Our Values</h4>
+        <ul>
+            <li>Quality: We use only the freshest ingredients and adhere to the highest standards of culinary excellence.</li>
+            <li>Hospitality: Our staff is dedicated to making every guest feel welcome and valued.</li>
+            <li>Community: We are proud to be an integral part of our local community and support local suppliers.</li>
+        </ul>
+    </div>
+
+    <div class="team-container">
+        <div class="container">
+            <h2 class="text-center">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-md-3 team-member">
+                    <img src="Library_Management_System/src/main/webapp/images/img4.jpg" alt="Chef">
+                    <h4>Shankar N H</h4>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="about-content">
+        <h4>Contact Us</h4>
+        <p class="contact-info">If you have any questions or would like to make a reservation, please don't hesitate to contact us.</p>
+        <p class="contact-info">Email: contact@myeliteresto.com</p>
+        <p class="contact-info">Phone: (+91) 8904418765 </p>
+        <p class="contact-info">Address: 577004 - BIET College Davanagere</p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 MY Elite Restaurant. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
