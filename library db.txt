@@ -1,0 +1,67 @@
+create database lib;
+use library;
+select * from library;
+create table adminn (
+       username VARCHAR(50) NOT NULL,
+        password VARCHAR(100) NOT NULL);
+insert into adminn values ('sagar','2505');
+insert into adminn values('geetha','2504');
+select * from adminn;
+
+select * from library;
+
+
+CREATE TABLE lib (
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    usn VARCHAR(20) NOT NULL,
+    phoneno VARCHAR(15) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+desc lib;
+select * from lib;
+
+
+create table bookss(
+         id varchar(20) primary key,
+         title varchar(20),
+         author varchar(20),
+         published_yrar int);
+select * from books;
+
+create table books(
+         id varchar(20) primary key,
+         title varchar(20),
+         author varchar(20),
+         published_yrar int);
+select * from books;
+
+
+create table issued_books(
+         userid varchar(20),
+         bookid varchar(20),
+         bookname varchar(20),
+         period int,
+         issueddate varchar(20)
+        );
+        select * from issued_books;
+        
+create table adminn (
+       username VARCHAR(50) NOT NULL,
+        password VARCHAR(100) NOT NULL);
+select * from adminn;
+
+select bookname , issueddate
+from issued_books 
+where userid='4BD21IS120';
+
+DELETE FROM bookss WHERE id = '12';
+DELETE FROM bookss WHERE id = '123';
+DELETE FROM bookss WHERE id = '567';
+
+
+CREATE TABLE UserProfile (
+    username VARCHAR(50) ,
+    email VARCHAR(100) ,
+    usn VARCHAR(20),
+    profilePicture BLOB);
