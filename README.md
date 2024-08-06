@@ -1,0 +1,2 @@
+<h1>Library Management System</h1>
+<h4>The Library Management System (LMS) is a comprehensive solution for managing library operations and resources. Designed with JDBC (Java Database Connectivity), this project allows for efficient handling of book catalogs, user registrations, and borrowing transactions. It provides a user-friendly interface for both library staff and patrons to interact with the system.</h4>
