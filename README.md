@@ -8,5 +8,5 @@
 <li>MySQL: Relational database management system used for storing and managing data.</li>
 <li>Apache Tomcat: Web server and servlet container for deploying the application.</li>
 </ul>
-![Screenshot 2024-08-06 101138](https://github.com/user-attachments/assets/6333164b-7853-488b-b8a3-0cafc9f7cec5)
+<img src="https://github.com/user-attachments/assets/6333164b-7853-488b-b8a3-0cafc9f7cec5" >
 
