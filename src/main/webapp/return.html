@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User ID Input</title>
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for background image and center alignment */
+        body {
+            background-image: url('https://w.forfun.com/fetch/d2/d2c8e870c782a15a8f3a282fd586fd8c.jpeg'); /* Specify your background image */
+            background-size: cover; /* Cover the entire background // Center the background image */
+            font-family: Arial, sans-serif; /* Specify font family */
+        }
+
+        .container {
+            margin-top: 100px; /* Adjust the top margin for centering */
+        }
+
+        form {
+            max-width: 400px; /* Limit form width */
+            margin: 0 auto; /* Center the form horizontally */
+            padding: 20px; /* Add padding */
+            background-color: rgba(255, 255, 255, 0.5); /* Background color with opacity */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        label {
+            font-weight: bold; /* Make labels bold */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%; /* Set input width to 100% */
+            padding: 8px; /* Add padding */
+            margin-bottom: 10px; /* Add margin */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 5px; /* Rounded corners */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        input[type="submit"] {
+            width: 100%; /* Set submit button width to 100% */
+            padding: 10px; /* Add padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #007bff; /* Button background color */
+            color: #fff; /* Text color */
+            cursor: pointer; /* Add cursor pointer on hover */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker background color on hover */
+        }
+    </style>
+</head>
+</head>
+<body>
+    <form id="userIdForm" action="ReturnBookServlet" method="get">
+		<div class="form-group">
+        <label for="userId">Please enter your user ID:</label>
+        <input type="text" id="userId" name="userid" required>
+        <label for="bookId">Please enter your book ID:</label>
+        <input type="text" id="bookId" name="bookid" required>
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script>
+        // Optionally, you can automatically focus on the input field when the page loads
+        document.getElementById("userId").focus();
+        document.getElementById("bookId").focus();
+    </script>
+</body>
+</html>

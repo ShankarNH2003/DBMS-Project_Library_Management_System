@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iamCoder - Heaven for Programmers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    body{
+      background: linear-gradient(60deg, #282a2b3d, #5a5b59);
+
+    }
+    
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <h3>
+          <a class="navbar-brand" href="Lander page.html"
+            ><i class="fa-solid fa-eye"></i>TechLibrary</a
+          >
+        </h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Digital Books</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" href="#">Write for us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="mx-2">
+           <a href="Profile.html"><button
+              class="btn btn-secondary"
+              data-toggle="modal"
+              data-target="LoginForm"
+            >
+            <i class="fa-solid fa-user"></i>Profile
+            </button></a>
+            <a href="Cart.html"><button
+              class="btn btn-secondary"
+              data-toggle="modal"
+              data-target="LoginForm"
+            >
+            <big><i class="fa-solid fa-cart-plus"></i></big> Cart
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+   
+   
+    <!-- image slider -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-ride="carousel"
+      >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1481121882039-4bf1945840f8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=450&ixid=MnwxfDB8MXxyYW5kb218MHx8Qm9va3MsY2hpbGRlcm5zfHx8fHx8MTcwOTA0ODU0MQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h3> Welcome to <i class="fa-solid fa-eye"></i>Tech library</h3>
+            <p>Technology News, Development and Trends.</p>
+            <button type="button" class="btn btn-danger">FeedBack</button>
+            <button type="button" class="btn btn-primary">
+              Digital Books
+            </button>
+            <button type="button" class="btn btn-success">Digital Games</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=450&ixid=MnwxfDB8MXxyYW5kb218MHx8bGlicmFyeSxib29rc3x8fHx8fDE3MDkwNDg0MDk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Award winning Blog</h3>
+            <p>Technology News, Development and Trends.</p>
+            <button type="button" class="btn btn-danger">FeedBack</button>
+            <button type="button" class="btn btn-primary">
+               Digital Books
+            </button>
+            <button type="button" class="btn btn-success" onclick="openViewBooks('/Feedback')">Digital Games</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1531674842274-9563aa15686f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=450&ixid=MnwxfDB8MXxyYW5kb218MHx8Qm9va3MsY29sbGVnZXN8fHx8fHwxNzA5MDQ4NjA3&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>The Best Reading Times</h3>
+            <p>Technology News, Development and Trends</p>
+            <button type="button" class="btn btn-danger" onclick="openViewBooks('/Feedback')">FeedBack</button>
+            <button type="button" class="btn btn-primary">
+              Digital Books
+            </button>
+            <button type="button" class="btn btn-success">Digital Games</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1579370318443-8da816457e3d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=450&ixid=MnwxfDB8MXxyYW5kb218MHx8bGlicmFyeXx8fHx8fDE3MDkwNDg2NDY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>The Best Fun Time</h3>
+            <p>Technology News, Development and Trends</p>
+            <button type="button" class="btn btn-danger" onclick="openViewBooks('/Feedback')">Technology</button>
+            <button type="button" class="btn btn-primary">
+              Digital Books
+            </button>
+            <button type="button" class="btn btn-success">Digital Games</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image slider button -->
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Cards with details -->
+<hr>
+<div class="container text-center">
+  
+    <button class="btn btn-primary" onclick="openViewBooks('/viewBooks')">View Books</button>
+    <button class="btn btn-primary" onclick="openViewUsers('/viewUsers')">My Books</button>
+    
+</div>
+
+
+
+<diV class="console-container my-4">
+  <div class="container text-center">
+    <hr>
+    <div class="row">
+      <div class="col">
+        <div>
+          <h3 class="fs-2 text-body-emphasis text-start"><i class="fa-solid fa-book-bookmark"></i>  Lending Books</h3>
+          <p class="text-start">Students are encouraged to borrow books from the library, but they must return them promptly to avoid fines and ensure equitable access, thereby maintaining the integrity of the library's resources.
+            <br><br>
+            <a href="#" class="btn btn-primary text-start">
+              Lending Books
+            </a>
+          </p>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div>
+          <h3 class="fs-2 text-body-emphasis text-start"><i class="fa-solid fa-book-open"></i>  Reverting Books</h3>
+          <p class="text-start">Students are requested to promptly return books to the library to ensure the library's collection's availability and facilitate access to resources for fellow students.The message urges students to return books to the library.
+            <br><br>
+            <a href="#" class="btn btn-primary text-start">
+              Reverting Books
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div>
+          <h3 class="fs-2 text-body-emphasis text-start"><i class="fa-regular fa-address-book"></i>  Explore Books</h3>
+          <p class="text-start">Students are encouraged to explore the library's diverse collection of books to expand their knowledge and interests, discover new topics, and find inspiration in the extensive resources available.
+            <br><br>
+            <a href="#" class="btn btn-primary text-start">
+              Explore Books
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<hr>
+
+
+
+<hr>
+
+  </div>
+</diV>
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Custom cards</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1558158539-226f4a45f7b3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8c3BhY2V8fHx8fHwxNzA5MDQzNzYy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400');background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://b1940378.smushcdn.com/1940378/wp-content/uploads/2021/08/transparent-logo-background.png?lossy=1&strip=1&webp=1" alt="Bootstrap" width="45" height="45" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Earth</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1415473655046-e32ca170859f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bmlndGgsZGFya3x8fHx8fDE3MDkwNDM1MDI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400');background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://b1940378.smushcdn.com/1940378/wp-content/uploads/2021/08/transparent-logo-background.png?lossy=1&strip=1&webp=1" alt="Bootstrap" width="45" height="45" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>India</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1484638674449-f648c50528c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTcwOTA0MzMwNw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400');background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://b1940378.smushcdn.com/1940378/wp-content/uploads/2021/08/transparent-logo-background.png?lossy=1&strip=1&webp=1" alt="Bootstrap" width="45" height="45" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<hr>
+        <footer class="bg-dark text-light py-4 my-2">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h5>Digital Library</h5>
+                      <p>Explore our vast collection of digital resources and immerse yourself in the world of knowledge.</p>
+                      <a href="#" class="btn btn-primary">Explore Now</a>
+                  </div>
+                  <div class="col-md-6">
+                      <h5>Connect with Us</h5>
+                      <div class="social-icons">
+                          <a href="#" class="text-light mr-3"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#" class="text-light mr-3"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="text-light mr-3"><i class="fab fa-instagram"></i></a>
+                          <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <hr class="my-4">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <p>&copy; 2024 Your Library. All rights reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openViewBooks(url) {
+          window.location.href = "http://localhost:8080/Library_Management_System/ViBookServlet";
+      }
+      function openViewUsers(url) {
+          window.location.href = "mybook.html";
+      }
+     
+  </script>
+  </body>
+</html>

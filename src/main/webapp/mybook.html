@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User ID Input</title>
+</head>
+<body>
+    <script>
+        function getUserDetails() {
+            var userId = prompt("Please enter your user ID:");
+            if (userId != null && userId != "") {
+                window.location.href = "http://localhost:8080/Library_Management_System/MyBooksServlet" + userId;
+            }
+        }
+        getUserDetails();
+    </script>
+</body>
+</html>
